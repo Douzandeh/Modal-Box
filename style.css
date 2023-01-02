@@ -28,7 +28,7 @@ body{
     display: none;
     position: fixed;
     z-index: 1;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
@@ -39,6 +39,7 @@ body{
     background-color: #fefefe;
     margin: auto;
     margin-top: 100px;
+    animation: animatetop 0.5s;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
 }
 
@@ -64,7 +65,7 @@ body{
 
 @keyframes animatetop {
     from{
-        margin-top: -300px;
+        margin-top: -400px;
         opacity: 0;
     }
     to{
