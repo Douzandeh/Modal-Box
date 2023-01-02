@@ -1,0 +1,74 @@
+/* *Googlefont */
+@import url('https://fonts.googleapis.com/css2?family=Andika&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Andika', sans-serif;
+}
+
+body , .modal-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    height: 100vh;
+    background: rgba(137, 43, 226, 0.687);
+}
+#openBtn{
+    border: 0;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.modal-container{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content{
+    width: 400px;
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header{
+    padding: 2px 15px;
+    background-color: blueviolet;
+    color: white;
+    justify-content: space-between;
+}
+
+.modal-header .closeBtn{
+    font-size: 35px;
+}
+.modal-header .closeBtn:hover{
+    color: rgb(39, 39, 39);
+}
+
+.modal-body{
+    padding: 15px 20px;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+@keyframes animatetop {
+    from{
+        margin-top: -300px;
+        opacity: 0;
+    }
+    to{
+        margin-top: 100px;
+        opacity: 1;
+    }
+}
